@@ -1,0 +1,125 @@
+/*Comments are only in French
+  The site has been created only for students of the Coding-Factory, so it is free of rights only for certain person using it
+*/
+
+/*Global*/
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    font-family: "Monument Extended", Arial, Helvetica, sans-serif;
+}
+
+body {
+    color: white;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+/*Haut page*/
+header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+header h1 {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header,
+header:before {
+    background: 50% 50% / cover;
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    background: url(img/HERO.jpeg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: 0;
+    min-height: 100vh;
+}
+
+/*Millieu*/
+.container {
+    z-index: 2;
+    position: absolute;
+    top: 100vh;
+    background: black;
+    line-height: 30px;
+    font-weight: lighter;
+    padding: 40px;
+    color: grey;
+}
+.about{
+    height: 50%;
+    display: flex;
+}
+.you-about{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    margin: 0!important;
+}
+.about-page{
+    width: 50%;
+}
+.about-page div{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.about-page div > p{
+    width: 80%;
+    font-size: 18px;
+    line-height: 30px;
+    color: aliceblue;
+}
+.about-page div > h2{
+    color: aliceblue;
+}
+.about-page div:nth-child(1){
+    background-color: rgb(66,133,244);
+}
+.about-page div:nth-child(2){
+    background-color: rgb(219,68,55);
+}
+.about-page div:nth-child(3){
+    background-color: rgb(244,160,0);
+}
+.about-page div:nth-child(4){
+    background-color: rgb(15,157,88);
+}
+
+/*Bas Page*/
+.down{
+
+}
